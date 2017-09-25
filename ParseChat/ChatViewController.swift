@@ -75,7 +75,7 @@ class ChatViewController: JSQMessagesViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Client.shared.unsubscribe(self.conversation_query)
+        subscriber.unsubscribe(self.conversation_query)
     }
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
