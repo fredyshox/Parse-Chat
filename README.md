@@ -7,3 +7,19 @@
  * Parse 
  * ParseLiveQuery
  * JSQMessagesViewController 
+ 
+ ## How to run
+ Firstly install required libraries using Cocoapods.
+ Then setup the app, by providing required client configuration properties for use with your Parse server in [AppDelegate](./ParseChat/AppDelegate.swift).
+ 
+```swift
+// inside applicationDidFinishLaunchingWithOptions method...
+
+// CLIENT CONFIGURATION
+// Configure server connection
+let configuration = ParseClientConfiguration { (config) in
+  config.applicationId = "test123"
+  config.clientKey = "yourkey"
+  config.server = "http://yourserver.url"
+}
+```
