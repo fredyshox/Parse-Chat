@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Message.registerSubclass()
+        
+        // CLIENT CONFIGURATION
+        // Configure server connection
         let configuration = ParseClientConfiguration { (config) in
             config.applicationId = "test123"
             config.clientKey = ""
